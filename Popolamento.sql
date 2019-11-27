@@ -150,4 +150,6 @@ INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, i
 INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TMMFXX00I24E463J', 'BB34234ED', 'GE4553422K', 'B ', 1, null, 'Via Dotto, 6', '2027-12-11', '2017-01-11');
 INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('PLRCML68T23E488W', 'GR33222AB', 'GE3222675K', 'B ', 2, null, 'Via Pronti, 9', '2025-11-28', '2019-11-13');
 INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('NPLNSL73F11E444R', 'DE234112V', 'GE3525678K', 'B ', null, 7, 'Vicolo Cieco Fondachetto, 13', '2027-06-11', '2018-10-06');
-
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('PNCADT22E49B212R', 'DD32342TG', 'GE3231124K', 'B ', 3, null, 'Piazza Ta, 5', '2029-05-11', '2019-05-11');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TSCMMA11B79B344M', 'MN32892DD', 'GE3119498K', 'B ', 3, null, 'Piazza Ta, 5', '2028-07-20', '2018-07-20');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TRVGNZ23A78B233R', 'JI72847WQ', 'GE3291847K', 'B ', null, 7, 'Via del Canneto, 77', '2022-01-01', '2012-01-01');
