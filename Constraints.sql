@@ -84,7 +84,7 @@ CREATE TRIGGER controllo_carta_prenotazione BEFORE INSERT OR UPDATE ON prenotazi
 --10 Il numero di vetture presenti in un parcheggio non deve mai eccedere il numero posti dello stesso.
 
 CREATE OR REPLACE FUNCTION controllo_numerovetture() RETURNS trigger AS $controllo_numerovetture$ BEGIN
-IF (SELECT count(*) FROM veicoli WHERE parcheggio = NEW.parcheggio)>(SELECT numposti FROM parcheggi WHERE codP = new.parcheggio)
+IF (SELECT count(*) FROM veicoli WHERE parcheggio = NEW.parcheggio)>=(SELECT numposti FROM parcheggi WHERE codP = new.parcheggio)
 THEN RAISE EXCEPTION '%posti esauriti in quel parcheggio', NEW.parcheggio;
 ELSE RETURN NEW;
 END IF; END; $controllo_numerovetture$ LANGUAGE plpgsql;
@@ -111,6 +111,16 @@ ELSE RETURN NEW;
 END IF; END; $controllo_autoprenotazioni$ LANGUAGE plpgsql;
 
 CREATE TRIGGER controllo_autoprenotazioni BEFORE INSERT OR UPDATE ON prenotazioni FOR EACH ROW EXECUTE PROCEDURE controllo_autoprenotazioni();
+
+--Un utente non può avere più di un conducente addizionale
+
+CREATE OR REPLACE FUNCTION controllo_numeroconducenti() RETURNS trigger AS $controllo_numeroconducenti$ BEGIN
+IF (Select count(*) from conducenti where utente = new.utente) = 2
+THEN RAISE EXCEPTION '%Un utente può avere solo un conducente addizionale', NEW.utente;
+ELSE RETURN NEW;
+END IF; END; $controllo_numeroconducenti$ LANGUAGE plpgsql;
+
+CREATE TRIGGER controllo_numeroconducenti BEFORE INSERT OR UPDATE ON conducenti FOR EACH ROW EXECUTE PROCEDURE controllo_numeroconducenti();
 
 
 --14 Data e ora di ritiro in prenotazione devono essere precedenti alla data e ora di consegna.

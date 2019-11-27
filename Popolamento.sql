@@ -142,11 +142,12 @@ INSERT INTO veicoli VALUES ('PP234PP', 'Bionda', 22000.00, 'Nera', 1234, 1, fals
 INSERT INTO veicoli VALUES ('QQ123PP', 'Mazzi', 99000.00, 'Rossa', 1234, null, false, 5, 2);
 INSERT INTO veicoli VALUES ('FF668FF', 'Maria', 23000.00, 'Blu', 1234, null, true, 6, 2);
 INSERT INTO veicoli VALUES ('FS668SS', 'Giova', 29000.00, 'Blu', 1234, null, true, 2, 1);
+INSERT INTO veicoli VALUES ('FT121GB', 'Paol', 89000.00, 'Nera', 1234, null, true, 2, 1);
 
 --Conducenti
 
-INSERT INTO ultimate.conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TRNDVO96R22E132F', 'VV65463JI', 'GE4532351K', 'B ', 1, null, 'Via Dotto, 6', '2025-07-11', '2015-07-11');
-INSERT INTO ultimate.conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TMMFXX00I24E463J', 'BB34234ED', 'GE4553422K', 'B ', 1, null, 'Via Dotto, 6', '2027-12-11', '2017-01-11');
-INSERT INTO ultimate.conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('PLRCML68T23E488W', 'GR33222AB', 'GE3222675K', 'B ', 2, null, 'Via Pronti, 9', '2025-11-28', '2019-11-13');
-INSERT INTO ultimate.conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('NPLNSL73F11E444R', 'DE234112V', 'GE3525678K', 'B ', null, 7, 'Vicolo Cieco Fondachetto, 13', '2027-06-11', '2018-10-06');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TRNDVO96R22E132F', 'VV65463JI', 'GE4532351K', 'B ', 1, null, 'Via Dotto, 6', '2025-07-11', '2015-07-11');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('TMMFXX00I24E463J', 'BB34234ED', 'GE4553422K', 'B ', 1, null, 'Via Dotto, 6', '2027-12-11', '2017-01-11');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('PLRCML68T23E488W', 'GR33222AB', 'GE3222675K', 'B ', 2, null, 'Via Pronti, 9', '2025-11-28', '2019-11-13');
+INSERT INTO conducenti (codf, estremidoc, estremipat, catpat, utente, azienda, indirizzo, datasdoc, datardoc) VALUES ('NPLNSL73F11E444R', 'DE234112V', 'GE3525678K', 'B ', null, 7, 'Vicolo Cieco Fondachetto, 13', '2027-06-11', '2018-10-06');
 
