@@ -37,7 +37,31 @@ insert into modalitapagamento values (default, 70, 6, 5);
 insert into modalitapagamento values (default, NULL, NUll, 10);
 insert into modalitapagamento values (default, NULL, NULL, 9);
 insert into modalitapagamento values (default, 33, 4, 8);
+--Utenti
 
+INSERT INTO utente (codu, codmp) VALUES (1, 1);
+INSERT INTO utente (codu, codmp) VALUES (2, 2);
+INSERT INTO utente (codu, codmp) VALUES (3, 3);
+INSERT INTO utente (codu, codmp) VALUES (4, 4);
+INSERT INTO utente (codu, codmp) VALUES (5, 5);
+INSERT INTO utente (codu, codmp) VALUES (6, 6);
+INSERT INTO utente (codu, codmp) VALUES (7, 7);
+INSERT INTO utente (codu, codmp) VALUES (8, 8);
+INSERT INTO utente (codu, codmp) VALUES (9, 9);
+INSERT INTO utente (codu, codmp) VALUES (10, 10);
+INSERT INTO utente (codu, codmp) VALUES (11, 11);
+INSERT INTO utente (codu, codmp) VALUES (12, 2);
+INSERT INTO utente (codu, codmp) VALUES (13, 4);
+INSERT INTO utente (codu, codmp) VALUES (14, 12);
+
+--Privato
+
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (1, 'TMMFXX00I24E463J', 'tommofaa@gmail.com', 'Tommo', 'Faa', '2000-01-01', 'Brembate', 'M', 'studente', 'Via Dotto, 6', true);
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (2, 'GCMCNG96E24E463J', 'cingolans@gmail.com', 'Giacomo', 'Cangioloni', '1996-01-01', 'Addis Abeba', 'M', 'studente', 'Via Pronti, 9', false);
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (3, 'MRCMSC96E12R163J', 'SHOPPIAML@gmail.com', 'Marco', 'Maschio', '1996-12-23', 'Santa Maria', 'M', 'studente', 'Piazza Ta, 5', true);
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (4, 'LCXVLL97H54Y234O', 'luccavalle@hotmail.com', 'Lucca', 'Valle', '2000-10-03', 'Scampia', 'M', 'portapizze', 'Largo Stretto, 1', false);
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (5, 'MRXGRD66E24E463J', 'mariagiordano5@gmail.com', 'Maria', 'Giordano', '1966-01-01', 'Roma', 'F', 'pizzaiola', 'Via Del Corso, 23', false);
+INSERT INTO privato (codu, codf, email, nome, cognome, datan, luogon, genere, professione, indirizzo, bonus) VALUES (6, 'RXXKSM96E24E463J', 'erikasamoto@gmail.com', 'Eri', 'Kasamoto', '1989-01-01', 'Tokyo', 'F', 'soldato', 'Via Del Parco, 12 ', false);
 --Legali
 
 insert into legali values (default, 'Davide', 'Marcone', '01-01-1996', 'Camogli');
