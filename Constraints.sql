@@ -36,7 +36,7 @@ CREATE TRIGGER ritiro_abbonamento BEFORE INSERT OR UPDATE ON Prenotazioni FOR EA
 
 --4 L'ora di ritiro della vettura deve essere di almeno 15 minuti successiva all'ora dell'inserimento della prenotazione.
 
-ALTER TABLE Prenotazioni ADD CONSTRAINT almeno15min CHECK(EXTRACT(minute FROM dataoraritiro - oraprenotazione) >= 15)
+ALTER TABLE Prenotazioni ADD CONSTRAINT almeno15min CHECK(EXTRACT(minute FROM dataoraritiro - oraprenotazione) >= 15);
 
 -- 5 Il conducente addizionale associato a privato deve avere lo stesso indirizzo di residenza del privato a cui sono associati.;
 
@@ -54,7 +54,7 @@ CREATE TRIGGER controllo_indirizzo BEFORE INSERT OR UPDATE ON Conducenti FOR EAC
 
 --7 Se si sceglie come modalità di pagamento il pre-pagamento, l'ammontare deve essere strettamente maggiore di 0 e il residuo coerente con quanto speso per abbonamenti e  prenotazioni.
 
-ALTER TABLE modalitapagamento ADD CONSTRAINT Controllo_prepagamento CHECK (prepag>0 OR prepag IS NULL)
+ALTER TABLE modalitapagamento ADD CONSTRAINT Controllo_prepagamento CHECK (prepag>0 OR prepag IS NULL);
 
 --8 Utenti diversi possono usare la stessa modalità di pagamento solo se essa non è di tipo pre-pagamento/contanti.
 --Per costruzione della tabella
