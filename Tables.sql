@@ -134,7 +134,7 @@ create table conducenti
 	indirizzo varchar(40) not null,
 	datasdoc date,
 	datardoc date,
-	CHECK (utente is null and azienda is not null) or (utente is not null and azienda is null)),
+	CHECK ((utente is null and azienda is not null) or (utente is not null and azienda is null)),
 	CHECK (datasdoc>datardoc)
 );
 
