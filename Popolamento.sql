@@ -148,9 +148,9 @@ INSERT INTO categoria (nomecategoria) VALUES ('Cargo');
 
 INSERT INTO ammette (codp, nomecategoria) VALUES (1, 'City Car');
 INSERT INTO ammette (codp, nomecategoria) VALUES (1, 'Cargo');
-INSERT INTO ammette (codp, nomecategoria) VALUES (1, 'Comfort');
+INSERT INTO ammette (codp, nomecategoria) VALUES (1, 'Elettrico');
 INSERT INTO ammette (codp, nomecategoria) VALUES (1, 'Media');
-INSERT INTO ammette (codp, nomecategoria) VALUES (2, 'City Car');
+INSERT INTO ammette (codp, nomecategoria) VALUES (2, 'Media');
 INSERT INTO ammette (codp, nomecategoria) VALUES (2, 'Cargo');
 INSERT INTO ammette (codp, nomecategoria) VALUES (2, 'Elettrico');
 INSERT INTO ammette (codp, nomecategoria) VALUES (3, 'Comfort');
@@ -163,8 +163,7 @@ INSERT INTO veicoli VALUES ('AB123AB', 'Violetta', 12000.00, 'Blu', 1234, 1, fal
 INSERT INTO veicoli VALUES ('PP123PP', 'Bluette', 16000.00, 'Verde', 1234, 1, true, 2, 1);
 INSERT INTO veicoli VALUES ('VV123VV', 'Azzurra', 21000.00, 'Grigia', 1234, 2, true, 3, 1);
 INSERT INTO veicoli VALUES ('PP234PP', 'Bionda', 22000.00, 'Nera', 1234, 1, false, 4, 2);
-INSERT INTO veicoli VALUES ('QQ123PP', 'Mazzi', 99000.00, 'Rossa', 1234, null, false, 5, 2);
-INSERT INTO veicoli VALUES ('FF668FF', 'Maria', 23000.00, 'Blu', 1234, null, true, 6, 2);
+INSERT INTO veicoli VALUES ('QQ123PP', 'Mazzi', 99000.00, 'Rossa', 1234, null, false, 4, 2);
 INSERT INTO veicoli VALUES ('FS668SS', 'Giova', 29000.00, 'Blu', 1234, null, true, 2, 1);
 INSERT INTO veicoli VALUES ('FT121GB', 'Paol', 89000.00, 'Nera', 1234, null, true, 2, 1);
 
