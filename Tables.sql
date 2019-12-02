@@ -271,6 +271,7 @@ create table prenotazioni
 	datapagamento timestamp,
 	pagamento integer,
 	tipopagamento varchar(7) Not null CHECK (tipopagamento='CC' OR tipopagamento='RID' OR tipopagamento = 'PREPAG')
+	prezzo numeric(8,2);
 );
 
 create table rifornimenti
